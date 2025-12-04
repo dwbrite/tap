@@ -1,25 +1,25 @@
 class Gte < Formula
   desc "gametank emulator"
   homepage "https://github.com/dwbrite/gametank-sdk"
-  version "0.10.0"
+  version "0.10.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gte-aarch64-apple-darwin.tar.xz"
-      sha256 "408f24c2be37a2534f659fc8043618458ae1d37137e3cfc15a8dfa66388bcba6"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gte-aarch64-apple-darwin.tar.xz"
+      sha256 "b7022dbf925ec05bdbbb1a93c24e721ebd68bc9d030f92759d64b21ee4b5b1b3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gte-x86_64-apple-darwin.tar.xz"
-      sha256 "3194c695ab4286fc3272fa427f2e03386be423027ad706ca4239aefb25806551"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gte-x86_64-apple-darwin.tar.xz"
+      sha256 "163bde248490e4f1b383f7378505fd9c0d4ec7cad4c87174b2ec80432c76b6ca"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gte-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ab76c4a3763aec1c0b86d05886c7e017baea1b6b782eaa9da357bb7bb1f0b8a2"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gte-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "75bb9a48d6f875f8baf618dbe29dc6edf93ed1925a3aa4d4b0a9578664e810f5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gte-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5fffe9970c308ec1f87768bfcb23067cffa270106662578b3a3bab065db4133e"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gte-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2cad6270df151e8d584cb80060dfbd6a89029b449a295ee2c18299b8251fa3a6"
     end
   end
   license "MIT"
