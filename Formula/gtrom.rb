@@ -1,25 +1,25 @@
 class Gtrom < Formula
   desc "gametank rom management tool"
   homepage "https://github.com/dwbrite/gametank-sdk"
-  version "0.10.0"
+  version "0.10.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gtrom-aarch64-apple-darwin.tar.xz"
-      sha256 "1cacb5c643789afd82abdb9b8dcb7344422c940d20adac209f5863cfbb3efcdb"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gtrom-aarch64-apple-darwin.tar.xz"
+      sha256 "8cb466caad662580425551704e27d948c3b30e9999a456994e36cbd26e662505"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gtrom-x86_64-apple-darwin.tar.xz"
-      sha256 "5c9d10c9b7c19bc5b1e0855b66c05908fe6bd7b92f0aee73d55f0d7e9cc55ac6"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gtrom-x86_64-apple-darwin.tar.xz"
+      sha256 "3e61c3efd753d7086e8ceba2b1c0c2e4c78bb7f584c63459b1df178feb84bd3a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gtrom-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3883f9e077cc2cbb7f85615300613a4d3deddf07347b940772c35cf4fb62562e"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gtrom-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "890eece3e3c609e00a871691d382149563a79e43ae875cfbc08682df1dfa1bf5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gtrom-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3c94b63d8f7fc29a9c89a1e7437a8d81e733821bf176a58334de85c4bc20949d"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gtrom-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "87ed72419fe713fada166652670f68013cf5aa4676164f3e807d668eb4fcaaee"
     end
   end
   license "MIT"
