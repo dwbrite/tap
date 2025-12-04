@@ -1,25 +1,25 @@
 class Gtld < Formula
   desc "GameTank Loader! For loading gametank roms onto 2M Flash cartridges using the Gametank Cartridge Programmer v4"
   homepage "https://github.com/dwbrite/gametank-sdk"
-  version "0.10.0"
+  version "0.10.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gtld-aarch64-apple-darwin.tar.xz"
-      sha256 "32e282d9741c663a37dec965df97273f11c932fe4f4f4250370558e5efb2b5ad"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gtld-aarch64-apple-darwin.tar.xz"
+      sha256 "3a54978f1ab94b42789de03df3bc5a564e5473c7a757398a6ef84fb0b8ad88a4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gtld-x86_64-apple-darwin.tar.xz"
-      sha256 "2d90d72ae2e2f28e6e365a8f59548fb3109901a0e2a79dcc0124a2a8942f992b"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gtld-x86_64-apple-darwin.tar.xz"
+      sha256 "6d5802db510f052b545faf4c6f521608607ca47d24e85106bbdcdb70c93d091c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gtld-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9da6bcd07a19a3ac2fe7b160fdaa9ea52176be5bf6816b810176f23bfa5cd0bb"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gtld-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "cea1d93267e7a9dbcf68ad298a0691f1abdb8feb8ca6741476a306aeeac05e3f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.0/gtld-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5794fb9944c0d3096a7024a011a7151deed8db08814386e050439d43030732d8"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/v0.10.1/gtld-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "babca6306cb24ae5f354713b9e643eddde187a98870d8a92688e9d8f3aefb3eb"
     end
   end
   license "MIT"
