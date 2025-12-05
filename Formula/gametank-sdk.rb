@@ -1,25 +1,25 @@
 class GametankSdk < Formula
   desc "GameTank SDK - Complete toolkit for GameTank development"
   homepage "https://github.com/dwbrite/gametank-sdk"
-  version "0.12.1"
+  version "0.14.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.12.1/gametank-sdk-aarch64-apple-darwin.tar.xz"
-      sha256 "907eee1276ebcea8497a77f728b1fe864bdf6270ed290c2441e0ce5c98fc7cd5"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.14.0/gametank-sdk-aarch64-apple-darwin.tar.xz"
+      sha256 "758456dbdfef6b14c12af59ce5c37c3ad92b67d14b34cd7ff199f39348f3940e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.12.1/gametank-sdk-x86_64-apple-darwin.tar.xz"
-      sha256 "c962372b72d33bf81c05ab51d037724ae19cf0ed1aca7218e610f409b79c7ea2"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.14.0/gametank-sdk-x86_64-apple-darwin.tar.xz"
+      sha256 "4eb772d3b62470532ef1ba74d2677613b98eb237d3b80d933f8b9a84255c7e95"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.12.1/gametank-sdk-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "254b600a6c5be07ed6184a224084213ed57c92530367a9870f64382c53ce2d51"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.14.0/gametank-sdk-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0a43dfea0eca4ea79a0ccbb9995a3ebaf49723422d1e6689ef018638a61d06ed"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.12.1/gametank-sdk-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "354971150ed9f10adbcd9a7362bf653953298bf50563a4cd138461053e866c4a"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.14.0/gametank-sdk-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "90e5af6ee5cb7080cbb515f12c4072ef411c28d61d4152d6417cb737c3ffbfd4"
     end
   end
   license "MIT"
