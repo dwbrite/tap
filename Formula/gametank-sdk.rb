@@ -1,25 +1,25 @@
 class GametankSdk < Formula
   desc "GameTank SDK - Complete toolkit for GameTank development"
   homepage "https://github.com/dwbrite/gametank-sdk"
-  version "0.18.1"
+  version "0.19.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.18.1/gametank-sdk-aarch64-apple-darwin.tar.xz"
-      sha256 "3e4843ba41479f593578d2be7165584a3f61fd39a026e68b3d4679355661776d"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.19.1/gametank-sdk-aarch64-apple-darwin.tar.xz"
+      sha256 "5beaac2a50d8e5b22714b95a229560875482b073e9ec1d96ca18a2d961a6d84f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.18.1/gametank-sdk-x86_64-apple-darwin.tar.xz"
-      sha256 "caa3888cbcacf270e622d452b18ac14fbe35ff2626e1d9fb0550fa096fc1ed0b"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.19.1/gametank-sdk-x86_64-apple-darwin.tar.xz"
+      sha256 "6589b10bdd59308ad87a3cfb69edcf74dbe664e4416b04e20dd7efad1aba9778"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.18.1/gametank-sdk-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f8dfc495c573a621cf0e78c8557febdec641f2a8a53619ff6aca05b429be6648"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.19.1/gametank-sdk-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "dddf22ed73d2d9af41dc09b1a5b0202c7fc5de47fb470fef10b73a40c884b2b8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.18.1/gametank-sdk-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "eacd0c8e29bfc478aac3b5c49fe308b79a7fbdd3bde1824dfea415be6b785b5d"
+      url "https://github.com/dwbrite/gametank-sdk/releases/download/gametank-sdk-v0.19.1/gametank-sdk-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8da980704c3bbf3d32814c3d97ee8620f4c1f815f513be423ed9c39c3c265b1f"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class GametankSdk < Formula
   end
 
   def install
-    bin.install "gte", "gtgo", "gtld", "gtrom" if OS.mac? && Hardware::CPU.arm?
-    bin.install "gte", "gtgo", "gtld", "gtrom" if OS.mac? && Hardware::CPU.intel?
-    bin.install "gte", "gtgo", "gtld", "gtrom" if OS.linux? && Hardware::CPU.arm?
-    bin.install "gte", "gtgo", "gtld", "gtrom" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "gte", "gtgo", "gtld", "gtrom"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "gte", "gtgo", "gtld", "gtrom"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "gte", "gtgo", "gtld", "gtrom"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "gte", "gtgo", "gtld", "gtrom"
+    end
 
     install_binary_aliases!
 
